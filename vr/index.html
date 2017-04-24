@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>treydos</title>
+    <style>body { margin: 0; }</style>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+  </head>
+  <body>
+    <!-- When you're ready to deploy your app, update this line to point to your compiled client.bundle.js -->
+    <script src="./client.bundle?platform=vr"></script>
+    <script>
+      // Initialize the React VR application
+      ReactVR.init(
+        // When you're ready to deploy your app, update this line to point to
+        // your compiled index.bundle.js
+        '../index.vr.bundle?platform=vr&dev=true',
+        // Attach it to the body tag
+        document.body
+      );
+    </script>
+    <div style="display:none">Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="_blank">CC 3.0 BY</a></div>
+  </body>
+</html>
