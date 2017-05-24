@@ -30,6 +30,7 @@ And the popcorn was delicious!`
 						{ translate: [0, 0, -1.5] },
 						{ rotateX: '-45deg' },
 					]}
+					delay={100}
 				/>
 
 				<Football

@@ -18,27 +18,30 @@ const styles = StyleSheet.create({
 
 class BouncingText extends Component {
 	state = {
-		bounceValue: new Animated.Value(1.35),
+		bounceValue: new Animated.Value(0.8),
 		opacity: new Animated.Value(0),
 	}
 
 	componentDidMount() {
 		setTimeout(() => {
-			Animated.parallel([
-				Animated.spring(this.state.bounceValue, {
-					toValue: 1,
-					friction: 3,
-				}),
-				Animated.timing(this.state.opacity, {
-					toValue: 1,
-				}),
+			Animated.sequence([
+				Animated.delay(this.props.delay),
+				Animated.parallel([
+					Animated.spring(this.state.bounceValue, {
+						toValue: 0,
+						friction: 5,
+					}),
+					Animated.timing(this.state.opacity, {
+						toValue: 1,
+					}),
+				]),
 			]).start()
 		}, 250)
 	}
 
 	render() {
 		const { style, transform = [] } = this.props
-		const newTransform = [...transform, { scale: this.state.bounceValue }]
+		const newTransform = [...transform, { translateY: this.state.bounceValue }]
 		const newStyle = {
 			...style,
 			opacity: this.state.opacity,
@@ -53,9 +56,11 @@ class BouncingText extends Component {
 	}
 }
 BouncingText.propTypes = {
+	delay: PropTypes.number,
 	text: PropTypes.string.isRequired,
 	style: PropTypes.object,
 	transform: PropTypes.array.isRequired,
 }
+BouncingText.defaultProps = { delay: 0 }
 
 export default BouncingText
