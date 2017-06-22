@@ -9,8 +9,7 @@ let config = {
   },
 
   getBlacklistRE() {
-    return blacklist([
-    ])
+    return blacklist([])
   },
 
   getAssetExts() {

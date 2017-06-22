@@ -3,13 +3,13 @@ import { AppRegistry, View } from 'react-vr'
 import Seattle from './components/seattle'
 
 export default class treydos extends Component {
-	render() {
-		return (
-			<View>
-				<Seattle/>
-			</View>
-		)
-	}
+  render() {
+    return (
+      <View>
+        <Seattle />
+      </View>
+    )
+  }
 }
 
 AppRegistry.registerComponent('treydos', () => treydos)
