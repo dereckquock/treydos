@@ -15,15 +15,17 @@
     "react-vr",
     "equirectangular",
     "360 photos",
-    "football"
+    "football",
+    "nfl",
+    "stadium"
   ],
   "dependencies": {
-    "ovrui": "~1.0.0",
+    "ovrui": "^1.4.0",
     "prop-types": "^15.5.8",
     "react": "~15.4.1",
     "react-native": "~0.42.0",
-    "react-vr": "^1.1.0",
-    "react-vr-web": "^1.1.0",
+    "react-vr": "^1.4.0",
+    "react-vr-web": "^1.4.0",
     "three": "^0.80.1"
   },
   "devDependencies": {

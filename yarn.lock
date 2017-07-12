@@ -3307,15 +3307,9 @@ os-tmpdir@^1.0.0, os-tmpdir@^1.0.1:
   version "1.0.2"
   resolved "http://npm.paypal.com/repository/npm-all/os-tmpdir/-/os-tmpdir-1.0.2.tgz#bbe67406c79aa85c5cfec766fe5734555dfa1274"
 
-ovrui@~1.0.0:
-  version "1.0.0"
-  resolved "http://npm.paypal.com/repository/npm-all/ovrui/-/ovrui-1.0.0.tgz#6adb0d99dc9b20eb34f6e105f2086798a81d2daf"
-  dependencies:
-    three "^0.80.1"
-
-ovrui@~1.1.0:
-  version "1.1.0"
-  resolved "http://npm.paypal.com/repository/npm-all/ovrui/-/ovrui-1.1.0.tgz#99d5af2d5b925c10178ad9438866e606b460f6f8"
+ovrui@^1.4.0, ovrui@~1.4.0:
+  version "1.4.0"
+  resolved "http://npm.paypal.com/repository/npm-all/ovrui/-/ovrui-1.4.0.tgz#a40a0c7f1ed81d9f5d3d91b45f732bcaf5e5b214"
   dependencies:
     three "^0.80.1"
 
@@ -3680,15 +3674,15 @@ react-transform-hmr@^1.0.4:
     global "^4.3.0"
     react-proxy "^1.1.7"
 
-react-vr-web@^1.1.0:
-  version "1.1.0"
-  resolved "http://npm.paypal.com/repository/npm-all/react-vr-web/-/react-vr-web-1.1.0.tgz#5defc454979959a8a2662ebe11de830b2dc77c65"
+react-vr-web@^1.4.0:
+  version "1.4.0"
+  resolved "http://npm.paypal.com/repository/npm-all/react-vr-web/-/react-vr-web-1.4.0.tgz#2c7db57b70a11e0635de16e7d5c000d5061f314d"
   dependencies:
-    ovrui "~1.1.0"
+    ovrui "~1.4.0"
 
-react-vr@^1.1.0:
-  version "1.1.0"
-  resolved "http://npm.paypal.com/repository/npm-all/react-vr/-/react-vr-1.1.0.tgz#b469fbfc01500e7bd940ffee467b4073c23f2504"
+react-vr@^1.4.0:
+  version "1.4.0"
+  resolved "http://npm.paypal.com/repository/npm-all/react-vr/-/react-vr-1.4.0.tgz#8c3f4a48da75f1cd52ed3ce108bb1527f9b0d16c"
 
 react@~15.4.1:
   version "15.4.2"
