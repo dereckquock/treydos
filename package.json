@@ -8,7 +8,8 @@
     "open": "node -e \"require('xopen')('http://localhost:8081/vr/')\"",
     "lint": "eslint .",
     "format": "prettier-eslint \"**/*.js\" --write",
-    "test": "jest"
+    "test": "jest",
+    "precommit": "npm run format && npm run lint && git add ."
   },
   "keywords": [
     "vr",
@@ -37,6 +38,7 @@
     "eslint-plugin-import": "^2.2.0",
     "eslint-plugin-promise": "^3.5.0",
     "eslint-plugin-react": "^6.10.3",
+    "husky": "^0.14.3",
     "jest": "^20.0.3",
     "prettier-eslint-cli": "^4.1.1",
     "react-test-renderer": "~15.4.1",
