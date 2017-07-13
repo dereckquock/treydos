@@ -20,7 +20,13 @@ export const styles = StyleSheet.create({
   },
 })
 
-class Football extends Component {
+export default class Football extends Component {
+  static propTypes = {
+    children: PropTypes.node,
+    layoutOrigin: PropTypes.array.isRequired,
+    transform: PropTypes.array.isRequired,
+  }
+
   state = {
     hovered: false,
     showAdditionalInfo: false,
@@ -98,10 +104,3 @@ class Football extends Component {
     )
   }
 }
-Football.propTypes = {
-  children: PropTypes.node,
-  layoutOrigin: PropTypes.array.isRequired,
-  transform: PropTypes.array.isRequired,
-}
-
-export default Football

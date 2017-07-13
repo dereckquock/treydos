@@ -5,7 +5,7 @@
 import React, { Component } from 'react'
 import { asset, View, Animated } from 'react-vr'
 
-class Loading extends Component {
+export default class Loading extends Component {
   state = { rotation: new Animated.Value(0) }
 
   loopAnimation = () => {
@@ -49,5 +49,3 @@ class Loading extends Component {
     )
   }
 }
-
-export default Loading

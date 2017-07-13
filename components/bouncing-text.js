@@ -16,7 +16,16 @@ const styles = StyleSheet.create({
   },
 })
 
-class BouncingText extends Component {
+export default class BouncingText extends Component {
+  static propTypes = {
+    delay: PropTypes.number,
+    text: PropTypes.string.isRequired,
+    style: PropTypes.object,
+    transform: PropTypes.array.isRequired,
+  }
+
+  static defaultProps = { delay: 0 }
+
   state = {
     bounceValue: new Animated.Value(0.8),
     opacity: new Animated.Value(0),
@@ -55,12 +64,3 @@ class BouncingText extends Component {
     )
   }
 }
-BouncingText.propTypes = {
-  delay: PropTypes.number,
-  text: PropTypes.string.isRequired,
-  style: PropTypes.object,
-  transform: PropTypes.array.isRequired,
-}
-BouncingText.defaultProps = { delay: 0 }
-
-export default BouncingText
